@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Navigation from '../Navigation/Navigation';
-import {Link} from 'react-router-dom'
 
 const Home = (props) => {
   const [users, setUsers] = useState([]);
@@ -29,7 +28,7 @@ const Home = (props) => {
                     <img src={url} className="card-img-top" style={{ "width": "18rem" }} alt='' />
                     <h5 className="card-title">Title</h5>
                     <p className="card-text">{title}</p>
-                    <Link to={thumbnailUrl} className="btn btn-primary">Go</Link>
+                    <a href={thumbnailUrl} className="btn btn-primary">Go</a>
                   </div>
                 </div>
               </div>
